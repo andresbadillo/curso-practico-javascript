@@ -62,14 +62,14 @@ function calcularPerimetroCuadrado() {
     const lado = parseInt(document.getElementById("inputCuadrado").value);
 
     const perimetro = perimetroCuadrado(lado);
-    alert(perimetro);
+    alert("El perímetro de tu cuadrado es de: " + perimetro + "cm");
 }
 
 function calcularAreaCuadrado() {
     const lado = parseInt(document.getElementById("inputCuadrado").value);
 
     const area = areaCuadrado(lado);
-    alert(area);
+    alert("El área de tu cuadrado es de: " + area + "cm^2");
 }
 
 function calcularPerimetroTriangulo() {
@@ -78,7 +78,7 @@ function calcularPerimetroTriangulo() {
     const base = parseInt(document.getElementById("inputBase").value);
 
     const perimetro = perimetroTriangulo(lado1, lado2, base);
-    alert(perimetro);
+    alert("El perímetro de tu triángulo es de: " + perimetro + "cm");
 }
 
 function calcularAreaTriangulo() {
@@ -86,7 +86,7 @@ function calcularAreaTriangulo() {
     const altura = parseInt(document.getElementById("inputAltura").value);
 
     const area = areaTriangulo(base, altura);
-    alert(area);
+    alert("El área de tu triángulo es de: " + area + "cm^2");
 }
 
 function calcularAlturaTriangulo() {
@@ -96,7 +96,7 @@ function calcularAlturaTriangulo() {
 
     const altura = alturaTriangulo(lado1, lado2, base);
     if (lado1 == lado2) {
-        alert(altura);
+        alert("La altura de tu triángulo isósceles es de: " + altura + "cm");
     }
     else {
         alert("Los lados A y B no son iguales");
@@ -107,19 +107,19 @@ function calcularDiametroCirculo() {
     const radio = parseInt(document.getElementById("inputCirculo").value);
 
     const diametro = diametroCirculo(radio);
-    alert(diametro);
+    alert("El diámetro de tu círculo es de: " + diametro + "cm");
 }
 
 function calcularPerimetroCirculo() {
     const radio = parseInt(document.getElementById("inputCirculo").value);
 
     const perimetro = perimetroCirculo(radio);
-    alert(perimetro);
+    alert("El perímetro de tu círculo es de: " + perimetro + "cm");
 }
 
 function calcularAreaCirculo() {
     const radio = parseInt(document.getElementById("inputCirculo").value);
 
     const area = areaCirculo(radio);
-    alert(area);
+    alert("El área de tu círculo es de: " + area + "cm^2");
 }
