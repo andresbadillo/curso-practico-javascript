@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
+    <header class="cabecera">
         <h1>Porcentajes y descuentos</h1>
         <p>Este es el segundo taller del curso práctico de JavaScript</p>
     </header>
-    <section>
-        <h2>Calcula el precio a pagar de tus productos con descuento</h2>
-        <form action="">
-            <label for="inputPrice">Escribe el precio de tu producto: </label><br>
-            <input type="number" id="inputPrice" placeholder="Ingresa el valor"><br>
-
-            <label for="inputDiscount">Escribe el descuento de tu producto</label><br>
-            <input type="number" id="inputDiscount" placeholder="Ingresa el descuento"><br>
-
-            <button type="button" onclick="calculateDiscount()">Calcular el precio con descuento</button>
-
-            <p class="final-value" id="FinalValue"></p>
-        </form>
-    </section>
-
+    <main class="main-container">
+        <section class="container">
+            <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+            <form action="">
+                <label for="inputPrice">Escribe el precio de tu producto:</label>
+                <input type="number" id="inputPrice" placeholder="Ingresa el valor">
+    
+                <label for="inputCoupon">Tienes algún cupón de descuento?</label>
+                <input type="text" id="inputCoupon" placeholder="Escribe el código del cupón">
+    
+                <button type="button" onclick="calculateDiscount()">Calcular el precio con cupón</button>
+    
+                <p class="final-value" id="FinalValue"></p>
+            </form>
+        </section>
+    </main>
+    
     <script src="./descuentos.js"></script>
 </body>
 </html>

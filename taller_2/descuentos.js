@@ -5,12 +5,38 @@ function calcularPrecioConDescuento(precio, descuento) {
     return precioConDescuento;
 }
 
+const coupons = [
+    {
+        name: "I'm batman",
+        discount: 10,
+    },
+    {
+        name: "May the force be with you",
+        discount: 20,
+    },
+    {
+        name:  "You know nothing Jhon Snow",
+        discount: 30,
+    },
+];
+
 function calculateDiscount() {
     const precio = parseInt(document.getElementById("inputPrice").value);
-    const descuento = parseInt(document.getElementById("inputDiscount").value);
+    const couponValue = document.getElementById("inputCoupon").value;
 
-    const precioConDescuento = calcularPrecioConDescuento(precio, descuento);
+    const isCouponValueValid = function (coupon) {
+        return coupon.name === couponValue;
+    };
 
-    const precioFinal = document.getElementById("FinalValue");
-    precioFinal.innerText = "El precio con descuento es: $" + precioConDescuento;
+    const userCoupon = coupons.find(isCouponValueValid);
+
+    if (!userCoupon) {
+        alert("El cupón <" + couponValue + "> no es válido");
+    } else {
+        const descuento = userCoupon.discount;
+        const precioConDescuento = calcularPrecioConDescuento(precio, descuento);
+        const precioFinal = document.getElementById("FinalValue");
+        precioFinal.innerText = "El precio con descuento es: $" + precioConDescuento;
+    }
+    
 }
