@@ -1,0 +1,19 @@
+:root {
+    --red: #e63946;
+    --white: #edf6f9;
+    --blue-light: #a8dadc;
+    --blue-medium: #457b9d;
+    --blue-dark: #1d3557;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: var(--white);
+}
