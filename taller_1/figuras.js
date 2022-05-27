@@ -24,6 +24,15 @@ function areaTriangulo(base, altura) {
     return (base * altura) / 2;
 }
 
+function alturaTriangulo(lado1, lado2, base) {
+    if (lado1 == lado2) {
+        const alturaTrianguloIsosceles = Math.sqrt((lado1 * lado1) - ((base / 2) * (base / 2)));
+        return alturaTrianguloIsosceles;
+    } else {
+        console.error("Los lados A y B no son iguales");
+    }
+}
+
 console.groupEnd();
 
 // Código del círculo
@@ -78,6 +87,20 @@ function calcularAreaTriangulo() {
 
     const area = areaTriangulo(base, altura);
     alert(area);
+}
+
+function calcularAlturaTriangulo() {
+    const lado1 = parseInt(document.getElementById("inputLadoA").value);
+    const lado2 = parseInt(document.getElementById("inputLadoB").value);
+    const base = parseInt(document.getElementById("inputLadoBase").value);
+
+    const altura = alturaTriangulo(lado1, lado2, base);
+    if (lado1 == lado2) {
+        alert(altura);
+    }
+    else {
+        alert("Los lados A y B no son iguales");
+    }
 }
 
 function calcularDiametroCirculo() {
