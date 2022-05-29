@@ -38,5 +38,4 @@ function calculateDiscount() {
         const precioFinal = document.getElementById("FinalValue");
         precioFinal.innerText = "El precio con descuento es: $" + precioConDescuento;
     }
-    
 }
