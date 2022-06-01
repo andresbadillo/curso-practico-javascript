@@ -1,0 +1,108 @@
+:root {
+    --red: #e63946;
+    --white: #edf6f9;
+    --blue-light: #a8dadc;
+    --blue-medium: #457b9d;
+    --blue-dark: #1d3557;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: var(--white);
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.cabecera h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    color: var(--blue-dark);
+}
+.cabecera p {
+    font-size: 1.4rem;
+    padding-top: 10px;
+    text-align: center;
+    color: var(--blue-dark);
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+.main-container .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    padding: 15px 10px;
+    border: none;
+    background-color: var(--blue-light);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+.main-container .container form {
+    display: flex;
+    flex-direction: column;
+}
+.main-container .container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--blue-dark);
+}
+.main-container .container label {
+    font-size: 1.4rem;
+    text-align: start;
+    margin-bottom: 5px;
+    color: var(--blue-medium);
+}
+.main-container .container input {
+    background-color: var(--white);
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    text-decoration-color: var(--blue-dark);
+}
+.main-container .container input::placeholder {
+    color: var(--blue-light);
+    font-style: italic;
+    font-weight: lighter;
+}
+.main-container .container button {
+    background-color: var(--red);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.main-container .container button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}.main-container .container p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--blue-dark);
+}
