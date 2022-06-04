@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio ponderado</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Promedio ponderado</h1>
+        <p>Este es el tercer taller del curso práctico de JavaScript</p>
+    </header>
+    
+    <main class="main-container">
+        <section class="container">
+            <h2>Calcula el promedio ponderado de tus notas</h2>
+            <form action="">
+                <label for="">Selecciona la materia:</label>
+                <select name="select" id="selectMaterias">
+                    <option value="value1" selected>Cálculo</option>
+                    <option value="value2">Química</option>
+                    <option value="value3">Física</option>
+                    <i></i>
+                </select>
+                <label for="inputNumber">Digita la calificación:</label>
+                <input type="number" id="inputNumber" placeholder="Digita tu calificación" required>
+                <label for="inputCredits">Digita los créditos de la materia:</label>
+                <input type="number" id="inputCredits" placeholder="Digita los creditos de la materia" required>
+
+                <p>Carga los datos de calificación y créditos:</p>
+
+                <button class="button-special" type="button" onclick="loadArray()">Cargar</button>
+
+                <button type="button" onclick="calculatePonderado()">Calcular el promedio ponderado</button>
+    
+                <p class="final-value" id="FinalValue"></p>
+            </form>
+        </section>
+    </main>
+    
+    <script src="./ponderado.js"></script>
+</body>
+</html>

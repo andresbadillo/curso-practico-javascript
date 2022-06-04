@@ -1,5 +1,5 @@
 :root {
-    --red: #e63946;
+    --red: #ff595e;
     --white: #edf6f9;
     --blue-light: #a8dadc;
     --blue-medium: #457b9d;
@@ -55,15 +55,35 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
 }
-.main-container .container form {
-    display: flex;
-    flex-direction: column;
-}
 .main-container .container h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 10px;
     color: var(--blue-dark);
+}
+.main-container .container form {
+    display: flex;
+    flex-direction: column;
+}
+.main-container .container select {
+    background-color: var(--white);
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    appearance: none;
+    color: var(--blue-dark);
+}
+.main-container .container select:hover {
+    color: #1d3557;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.main-container .container option {
+    background-color: var(--blue-medium);
+    font-size: 1.4rem;
 }
 .main-container .container label {
     font-size: 1.4rem;
@@ -82,6 +102,17 @@ body {
     font-size: 1.4rem;
     text-decoration-color: var(--blue-dark);
 }
+.main-container .container .button-special {
+    background-color: var(--blue-dark);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
 .main-container .container input::placeholder {
     color: var(--blue-light);
     font-style: italic;
@@ -89,6 +120,7 @@ body {
 }
 .main-container .container button {
     background-color: var(--red);
+    color: var(--blue-dark);
     border: none;
     border-radius: 5px;
     height: 30px;
@@ -101,7 +133,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }.main-container .container p {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0;
     font-size: 1.4rem;
     font-weight: bold;
     color: var(--blue-dark);

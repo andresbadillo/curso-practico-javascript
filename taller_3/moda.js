@@ -23,6 +23,3 @@ function calculateModa() {
     const finalResult = document.getElementById("FinalValue");
     finalResult.innerText = "La moda es el número: " + moda[0];
 }
-
-
-
