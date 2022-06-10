@@ -4,16 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Home | Curso práctico de JavaScript</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <h1>Talleres del curso práctico de JavaScript</h1>
+    <header class="container-header">
+        <h1><a href="https://www.andresbadillo.co/" target="_blank">andresbadillo.co</a></h1>
+        <ul class="container-header-list">
+            <li class="container-header-list-element">
+                <a href="https://github.com/andresbadillo" target="_blank"><span><img src="./src/icons/github.svg" alt=""></span></a>
+            </li>
+            <li class="container-header-list-element">
+                <a href="https://www.linkedin.com/in/raul-andres-badillo-jaimes/" target="_blank"><span><img src="./src/icons/linkedin.svg" alt=""></span></a>
+            </li>
+            <li class="container-header-list-element">
+                <a href="https://www.instagram.com/andresbadillo.co/" target="_blank"><span><img src="./src/icons/instagram.svg" alt=""></span></a>
+            </li class="container-header-list-element">
+            <li class="container-header-list-element">
+                <a href="https://www.tiktok.com/@andresbadillo.co" target="_blank"><span><img src="./src/icons/tik-tok.svg" alt=""></span></a>
+            </li>
+        </ul>
     </header>
     
-    <section>
+    <section class="container-main">
+        <h1>Curso práctico de JavaScript</h1>
+        <h2>Temas vistos en el curso:</h2>
+        <p>HTML, CSS y JavaScript</p>
+        <p>Manipulación del DOM</p>
+        <p>Funciones</p>
+        <p>Arrays</p>
+        <p>Animaciones y Transiciones</p>
         <nav>
-            <ol>
+            <ul>
                 <li>
                     <a href="./taller_1/figuras.html">Taller #1</a>
                 </li>
@@ -35,7 +58,7 @@
                 <li>
                     <a href="./taller_4/salarios.html">Taller #4</a>
                 </li>
-            </ol>
+            </ul>
         </nav>
     </section>
 </body>
